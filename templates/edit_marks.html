@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Edit Marks</title>
+</head>
+<body>
+    <h2>Edit Marks for {{ student[2] }} ({{ student[1] }})</h2>
+    <form method="POST">
+        <label>Maths:</label><input type="number" name="sub1" value="{{ student[4] or '' }}"><br>
+        <label>Science:</label><input type="number" name="sub2" value="{{ student[5] or '' }}"><br>
+        <label>English:</label><input type="number" name="sub3" value="{{ student[6] or '' }}"><br>
+        <label>CS:</label><input type="number" name="sub4" value="{{ student[7] or '' }}"><br>
+        <label>Tamil:</label><input type="number" name="sub5" value="{{ student[8] or '' }}"><br><br>
+        <input type="submit" value="Update Marks">
+    </form>
+    <br>
+    <a href="/">Back</a>
+</body>
+</html>
