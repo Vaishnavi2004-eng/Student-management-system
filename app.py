@@ -199,6 +199,6 @@ def get_grade(mark):
     else:
         return "F"
 
+init_db()  # <-- always runs on startup
 if __name__ == '__main__':
-    init_db()
     app.run(debug=True)
